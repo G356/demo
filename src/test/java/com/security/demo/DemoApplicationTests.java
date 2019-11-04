@@ -1,16 +1,15 @@
 package com.security.demo;
-
 import com.security.demo.entity.User;
 import com.security.demo.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import javax.annotation.Resource;
 
 @SpringBootTest
 class DemoApplicationTests {
-@Autowired
+    @Resource
     UserMapper userMapper;
     @Test
     void contextLoads() {
